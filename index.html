@@ -679,7 +679,6 @@ function renderDash() {
   const dA = ultA ? dias(ultA.date) : null;
   $('#dAlert').className = 'alert card' + (dA === null || dA > 7 ? ' red' : '');
   $('#dAlert').innerHTML = `<span class="dot"></span>
-    <span>${ultA ? `Último lead A chegou há <b>${dA} dia${dA === 1 ? '' : 's'}</b> (${fDM.format(ultA.date)})` : '<b>Nenhum lead marcado como A</b>'}</span>
     <span>Último lead recebido em <b>${ult ? fDM.format(ult.date) : '-'}</b></span>
     <span><b>${pend}</b> lead${pend === 1 ? '' : 's'} pendente${pend === 1 ? '' : 's'} de classificação</span>`;
 
